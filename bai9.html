@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arrA = [];
+        let arrB = [];
+        let arrC = [];
+        for (var i = 0; i < 10; i++) {
+            arrA[i] = parseInt(prompt("Enter 10 number in array a"));
+        }
+        for (var j = 0; j < 10; j++) {
+            arrB[j] = parseInt(prompt("Enter 10 number in array b"));
+        }
+        document.write("Array a: " + arrA.join("-"));
+        document.write("<br/>Array b: " + arrB.join("-"));
+        for (var k = 0; k < 10; k++) {
+            arrC[k] = arrB[k];
+        }
+        for (var k = 0; k < 10; k++) {
+            arrC[arrC.length + 1] = arrA[k];
+        }
+        document.write("<br/>Array c: " + arrC.join(" "));
+
+
+
+    </script>
+
+</body>
+
+</html>

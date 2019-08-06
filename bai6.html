@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    // Chương trình tìm xem V có nằm trong mảng số nguyên không? 
+    //Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+   alert("Nhap vao 1 mang gom 10 so nguyen");  
+    let arr=[];
+    let check=false;
+    for(var i = 0 ; i < 10 ; i++) {
+        arr[i] = parseInt(prompt(" Nhap so nguyen"));
+    } 
+      let v =parseInt(prompt("Nhap v de tim trong mang"));
+      for( var j = 0; j < arr.length ; j++) {
+          if(v == arr[j]) {
+              document.write(v + " is in the array.");
+              check=true;
+            }
+          }
+            if (check==false) {
+            document.write(v + " isn't in the array.");
+ }
+          
+        
+
+    
+    </script>
+</body>
+</html>

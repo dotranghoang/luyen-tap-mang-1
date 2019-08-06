@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V
+        Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng 
+        (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)*/
+        let arr = [];
+        for (var i = 0; i < 10; i++) {
+            arr[i] = parseInt(prompt("Nhap 10 so nguyen trong 1 mang, So thu " + i));
+        }
+        document.write("Mang sau khi nhap: " + arr.join("-"))
+        let v = parseInt(prompt("Nhap so V"));
+        for (var j = 0; j < arr.length; j++) {
+            if (v == arr[j]) {
+                for (let k = j; k < arr.length; k++) {
+                    arr[k] = arr[k + 1];
+
+                }
+                arr.push(0);
+                document.write("<br/>Mang sau khi xoa V va them 0: " + arr.join(" "));
+            }
+        }
+
+    </script>
+</body>
+
+</html>
